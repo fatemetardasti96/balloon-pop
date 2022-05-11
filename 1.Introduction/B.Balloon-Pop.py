@@ -22,16 +22,12 @@ cap.set(4, 720)
 detector = HandDetector(detectionCon=0.8, maxHands=1)
 
 # Load Image
-imgBG = pygame.image.load("/home/fateme/Documents/game/Resources/Project - GUI/background.png").convert()
+imgBG = pygame.image.load("/home/fateme/Documents/game/Resources/background.png").convert()
 imgSoundOff = pygame.image.load("/home/fateme/Documents/game/Resources/sound-off.png").convert_alpha()
 imgSoundOff = pygame.transform.rotozoom(imgSoundOff, 0, 0.1)
 soundRect = imgSoundOff.get_rect()
 soundRect.x, soundRect.y = 5, 200
 
-# imgSoundOn = pygame.image.load("/home/fateme/Documents/game/Resources/sound-on.png").convert_alpha()
-# imgSoundOn = pygame.transform.rotozoom(imgSoundOn, 0, 0.1)
-# soundRectOn = imgSoundOn.get_rect()
-# soundRectOn.x, soundRectOn.y = 5, 200
 
 imgBalloon = pygame.image.load("/home/fateme/Documents/game/Resources/balloonBlue.png").convert_alpha()
 imgBalloon = pygame.transform.rotozoom(imgBalloon, 0, 0.15)
